@@ -30,7 +30,7 @@ pygame.mixer.init()
 cred_apd = credentials.Certificate("/home/jetsonpakyoan/Desktop/TA/abill/serviceAccountKey.json")
 if not firebase_admin._apps:
     app_apd = firebase_admin.initialize_app(cred_apd, {
-        'databaseURL': 'https://nalar-pwa-default-rtdb.asia-southeast1.firebasedatabase.app'
+        'databaseURL': 'key firebase'
     }, name='app_apd')
 history_apd_ref = db.reference("history", app=app_apd)
 
