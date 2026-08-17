@@ -37,9 +37,9 @@ def on_press(key):
     try:
         # Cek jika tombol berupa karakter string (- atau +)
         if hasattr(key, 'char') and key.char is not None:
-            if key.char == '-':
+            if key.char == '4':
                 requested_mode = "APD"
-            elif key.char == '+':
+            elif key.char == '6':
                 requested_mode = "DIMENSI"
                 
         # Cek jika tombol adalah Enter
@@ -63,8 +63,8 @@ def main():
     apd_system.start()
     
     print("\n=== KONTROL SISTEM ===")
-    print("[-] (Minus)  -> Mode APD")
-    print("[+] (Tambah) -> Mode Dimensi Obat")
+    print("[4] (Minus)  -> Mode APD")
+    print("[6] (Tambah) -> Mode Dimensi Obat")
     print("[Enter]      -> Keluar Program\n")
 
     cv2.namedWindow("SISTEM MONITORING TA", cv2.WINDOW_NORMAL)
