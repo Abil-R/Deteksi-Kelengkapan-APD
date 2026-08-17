@@ -45,9 +45,10 @@ Model deteksi dikembangkan menggunakan **YOLOv8** dan dilatih untuk mengenali ob
 
 Sistem diimplementasikan menggunakan:
 
-* NVIDIA Jetson Orin NX
+* Jetson Orin NX
 * Webcam USB
 * LCD 7 inci
+* Speaker
 
 ## Catatan
 
