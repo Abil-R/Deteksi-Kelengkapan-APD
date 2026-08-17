@@ -14,7 +14,7 @@ from firebase_admin import credentials, db
 # ==============================================================================
 # [FIX ERROR TLS JETSON]
 # ==============================================================================
-libgomp_path = "/home/jetsonpakyoan/.local/lib/python3.8/site-packages/pygame.libs/libgomp-d22c30c5.so.1.0.0"
+libgomp_path = "/home/.local/lib/python3.8/site-packages/pygame.libs/libgomp-d22c30c5.so.1.0.0"
 try:
     ctypes.CDLL(libgomp_path, mode=ctypes.RTLD_GLOBAL)
 except Exception:
@@ -27,7 +27,7 @@ pygame.mixer.init()
 # =====================================================
 # INIT FIREBASE (Jalan sekali saat modul diimport)
 # =====================================================
-cred_apd = credentials.Certificate("/home/jetsonpakyoan/Desktop/TA/abill/serviceAccountKey.json")
+cred_apd = credentials.Certificate("/home/jetson/serviceAccountKey.json")
 if not firebase_admin._apps:
     app_apd = firebase_admin.initialize_app(cred_apd, {
         'databaseURL': 'key firebase'
